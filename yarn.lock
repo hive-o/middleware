@@ -1732,9 +1732,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hive-o/standalone-template@workspace:.":
+"@hive-o/middleware@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@hive-o/standalone-template@workspace:."
+  resolution: "@hive-o/middleware@workspace:."
   dependencies:
     "@nx/eslint": "npm:19.5.6"
     "@nx/eslint-plugin": "npm:19.5.6"

@@ -1,5 +1,5 @@
 {
-  "name": "@hive-o/standalone-template",
+  "name": "@hive-o/middleware",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
