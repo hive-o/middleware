@@ -1,6 +1,6 @@
-type Next = () => Promise<void>;
-type Context = object;
-type MiddlewareFn = <T extends Context>(context: T, cb: Next) => Promise<void>;
+export type Next = () => Promise<void>;
+export type Context = object;
+export type MiddlewareFn = <T extends Context>(context: T, cb: Next) => Promise<void>;
 
 export class Middleware {
   private readonly middlewares: MiddlewareFn[];
