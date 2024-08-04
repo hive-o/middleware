@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/hive-o/middleware/compare/middleware-v1.5.0...middleware-v1.6.0) (2024-08-04)
+
+
+### Features
+
+* create internal context property ([4cc1f3d](https://github.com/hive-o/middleware/commit/4cc1f3d4038f162018f858cc6ca1d7002c045064))
+
 # [1.5.0](https://github.com/hive-o/middleware/compare/middleware-v1.4.1...middleware-v1.5.0) (2024-08-04)
 
 
