@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/hive-o/middleware/compare/middleware-v1.4.1...middleware-v1.5.0) (2024-08-04)
+
+
+### Features
+
+* make run args optional ([1169507](https://github.com/hive-o/middleware/commit/1169507e8aadf49478824008336b7779285a4c7a))
+
 ## [1.4.1](https://github.com/hive-o/middleware/compare/middleware-v1.4.0...middleware-v1.4.1) (2024-08-04)
 
 
