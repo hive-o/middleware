@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/hive-o/middleware/compare/middleware-v1.4.0...middleware-v1.4.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* remove reverse() to set stack to fifo ([52d79e5](https://github.com/hive-o/middleware/commit/52d79e589ab191e00e8e4081fc5d6cec34230aa8))
+
 # [1.4.0](https://github.com/hive-o/middleware/compare/middleware-v1.3.1...middleware-v1.4.0) (2024-08-04)
 
 
