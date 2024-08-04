@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/hive-o/middleware/compare/middleware-v1.2.0...middleware-v1.3.0) (2024-08-04)
+
+
+### Features
+
+* add types for context and next function ([7d04707](https://github.com/hive-o/middleware/commit/7d047072742e786494b6a633d2275d84746f97cd))
+
 # [1.2.0](https://github.com/hive-o/middleware/compare/middleware-v1.1.0...middleware-v1.2.0) (2024-08-04)
 
 
