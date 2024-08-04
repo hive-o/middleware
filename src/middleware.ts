@@ -10,13 +10,14 @@ export class Middleware<T extends Context = Context> {
   protected context: T; // Class property to hold the context
 
   async run(contextOrNext?: Next | T, optionalNext?: Next) {
+    this.context = {} as T;
     let next: Next | undefined = undefined;
 
     // Determine which argument is context and which is next
     if (typeof contextOrNext === 'function') {
       next = contextOrNext;
     } else if (contextOrNext) {
-      this.context = contextOrNext || ({} as T);
+      this.context = { ...this.context, ...contextOrNext };
       next = optionalNext;
     }
 
