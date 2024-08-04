@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/hive-o/middleware/compare/middleware-v1.6.2...middleware-v1.6.3) (2024-08-04)
+
+
+### Bug Fixes
+
+* initialize context as empty if not passed ([94a9f25](https://github.com/hive-o/middleware/commit/94a9f251e493a55ee346498da4d0a761a230c698))
+
 ## [1.6.2](https://github.com/hive-o/middleware/compare/middleware-v1.6.1...middleware-v1.6.2) (2024-08-04)
 
 
