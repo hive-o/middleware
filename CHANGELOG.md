@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/hive-o/middleware/compare/middleware-v1.3.0...middleware-v1.3.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* initialize internal middlewares array ([09a1cb2](https://github.com/hive-o/middleware/commit/09a1cb259b7b56f24adde65208979c586e22d51c))
+
 # [1.3.0](https://github.com/hive-o/middleware/compare/middleware-v1.2.0...middleware-v1.3.0) (2024-08-04)
 
 
