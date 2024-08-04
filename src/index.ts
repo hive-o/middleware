@@ -8,7 +8,18 @@ export type MiddlewareFn<T extends Context = Context> = (
 export class Middleware<T extends Context = Context> {
   private readonly middlewares: MiddlewareFn<T>[] = [];
 
-  async run(context: T, next: Next) {
+  async run(contextOrNext?: Next | T, optionalNext?: Next) {
+    let context: T = {} as T; // Empty initial context
+    let next: Next | undefined = undefined;
+
+    // Determine which argument is context and which is next
+    if (typeof contextOrNext === 'function') {
+      next = contextOrNext;
+    } else if (contextOrNext) {
+      context = contextOrNext;
+      next = optionalNext;
+    }
+
     const stack = this.middlewares.slice(); // Create a copy and reverse
 
     const execute = async (index = 0) => {
