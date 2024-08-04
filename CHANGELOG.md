@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/hive-o/middleware/compare/middleware-v1.6.0...middleware-v1.6.1) (2024-08-04)
+
+
+### Bug Fixes
+
+* switch protected to private ([7666571](https://github.com/hive-o/middleware/commit/7666571e451262789b7f0f2b085144aa8924c400))
+
 # [1.6.0](https://github.com/hive-o/middleware/compare/middleware-v1.5.0...middleware-v1.6.0) (2024-08-04)
 
 
