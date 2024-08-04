@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/hive-o/middleware/compare/middleware-v1.3.1...middleware-v1.4.0) (2024-08-04)
+
+
+### Features
+
+* create a shared context property ([0916e49](https://github.com/hive-o/middleware/commit/0916e49ff442338aab9796a93ff97874501111a3))
+
 ## [1.3.1](https://github.com/hive-o/middleware/compare/middleware-v1.3.0...middleware-v1.3.1) (2024-08-04)
 
 
