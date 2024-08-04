@@ -16,7 +16,7 @@ export class Middleware<T extends Context = Context> {
     if (typeof contextOrNext === 'function') {
       next = contextOrNext;
     } else if (contextOrNext) {
-      this.context = contextOrNext;
+      this.context = contextOrNext || ({} as T);
       next = optionalNext;
     }
 
