@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/hive-o/middleware/compare/middleware-v1.6.1...middleware-v1.6.2) (2024-08-04)
+
+
+### Bug Fixes
+
+* initialize with empty context ([8b66098](https://github.com/hive-o/middleware/commit/8b660980a8c3658baefcc6b00728e0670521f42d))
+
 ## [1.6.1](https://github.com/hive-o/middleware/compare/middleware-v1.6.0...middleware-v1.6.1) (2024-08-04)
 
 
