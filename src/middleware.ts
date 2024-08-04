@@ -6,17 +6,17 @@ export type MiddlewareFn<T extends Context = Context> = (
 ) => Promise<void>;
 
 export class Middleware<T extends Context = Context> {
+  private context: T; // Class property to hold the context
   private readonly middlewares: MiddlewareFn<T>[] = [];
 
   async run(contextOrNext?: Next | T, optionalNext?: Next) {
-    let context: T = {} as T; // Empty initial context
     let next: Next | undefined = undefined;
 
     // Determine which argument is context and which is next
     if (typeof contextOrNext === 'function') {
       next = contextOrNext;
     } else if (contextOrNext) {
-      context = contextOrNext;
+      this.context = contextOrNext;
       next = optionalNext;
     }
 
@@ -32,7 +32,7 @@ export class Middleware<T extends Context = Context> {
       }
 
       const middleware = stack[index];
-      await middleware(context, () => execute(index + 1));
+      await middleware(this.context, () => execute(index + 1));
     };
 
     await execute();
