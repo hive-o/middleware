@@ -5,7 +5,7 @@ export type MiddlewareFn = <T extends Context>(context: T, cb: Next) => Promise<
 export class Middleware {
   private readonly middlewares: MiddlewareFn[];
 
-  async start(context: MiddlewareFn, next: Next) {
+  async run(context: MiddlewareFn, next: Next) {
     const stack = this.middlewares.slice().reverse(); // Create a copy and reverse
 
     const execute = async (index = 0) => {
