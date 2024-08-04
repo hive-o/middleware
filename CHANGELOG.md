@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hive-o/middleware/compare/middleware-v1.1.0...middleware-v1.2.0) (2024-08-04)
+
+
+### Features
+
+* refactor from start to run ([934e910](https://github.com/hive-o/middleware/commit/934e910328dc8c742106ae9b30254355c66c2438))
+
 # [1.1.0](https://github.com/hive-o/middleware/compare/middleware-v1.0.0...middleware-v1.1.0) (2024-08-03)
 
 
