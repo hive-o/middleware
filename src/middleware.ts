@@ -37,9 +37,11 @@ export class Middleware<T extends Context = Context> {
     };
 
     await execute();
+    return this;
   }
 
   use(middleware: MiddlewareFn<T>) {
     this.middlewares.push(middleware);
+    return this;
   }
 }
