@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/hive-o/middleware/compare/middleware-v1.6.3...middleware-v1.7.0) (2024-08-05)
+
+
+### Features
+
+* make middleware chainable ([a5e6f4c](https://github.com/hive-o/middleware/commit/a5e6f4c7028ade17ba96ff9bc0fc356693497322))
+
 ## [1.6.3](https://github.com/hive-o/middleware/compare/middleware-v1.6.2...middleware-v1.6.3) (2024-08-04)
 
 
