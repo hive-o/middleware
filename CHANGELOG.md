@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/hive-o/middleware/compare/middleware-v1.7.0...middleware-v1.8.0) (2024-08-07)
+
+
+### Features
+
+* add asMiddleware for object to pass as middleware ([4904196](https://github.com/hive-o/middleware/commit/4904196a79d2aad142a39181084ef152c5f70782))
+
 # [1.7.0](https://github.com/hive-o/middleware/compare/middleware-v1.6.3...middleware-v1.7.0) (2024-08-05)
 
 
