@@ -9,6 +9,10 @@ export class Middleware<T extends Context = Context> {
   private readonly middlewares: MiddlewareFn<T>[] = [];
   protected context: T; // Class property to hold the context
 
+  async asMiddleware(context: T, next: Next) {
+    return this.run(context, next);
+  }
+
   async run(contextOrNext?: Next | T, optionalNext?: Next) {
     this.context = {} as T;
     let next: Next | undefined = undefined;
