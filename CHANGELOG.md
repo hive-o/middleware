@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/hive-o/middleware/compare/middleware-v1.8.0...middleware-v1.9.0) (2024-08-09)
+
+
+### Features
+
+* add debug fn ([b6d597e](https://github.com/hive-o/middleware/commit/b6d597ebd1a66eaf8dc61ecd3957383d114ecb94))
+
 # [1.8.0](https://github.com/hive-o/middleware/compare/middleware-v1.7.0...middleware-v1.8.0) (2024-08-07)
 
 
