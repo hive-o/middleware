@@ -1,5 +1,3 @@
-import * as DEBUG from 'debug';
-
 export type Context = object;
 export type Next = () => Promise<void> | void;
 export type MiddlewareFn<T extends Context = Context> = (
@@ -13,21 +11,6 @@ export class Middleware<T extends Context = Context> {
 
   async asMiddleware(context: T, next: Next) {
     return this.run(context, next);
-  }
-
-  debug(namespaceOrArgs?: any[] | string, ...restArgs: any[]) {
-    let logger: any;
-    let args: any[];
-
-    if (typeof namespaceOrArgs === 'string') {
-      logger = DEBUG('middleware'); // Use default instance
-      args = [namespaceOrArgs, ...restArgs]; // Treat first arg as part of the message
-    } else {
-      logger = DEBUG(`${namespaceOrArgs?.toString()}`); // Create new instance or use empty namespace
-      args = restArgs;
-    }
-
-    logger(...args);
   }
 
   async run(contextOrNext?: Next | T, optionalNext?: Next) {
