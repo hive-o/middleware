@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/hive-o/middleware/compare/middleware-v1.9.0...middleware-v1.9.1) (2024-08-11)
+
+
+### Bug Fixes
+
+* remove debug fn ([9fcbbd7](https://github.com/hive-o/middleware/commit/9fcbbd7e27818aa264988d403ce2f0b57f718626))
+
 # [1.9.0](https://github.com/hive-o/middleware/compare/middleware-v1.8.0...middleware-v1.9.0) (2024-08-09)
 
 

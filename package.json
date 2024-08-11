@@ -1,6 +1,6 @@
 {
   "name": "@hive-o/middleware",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "license": "MIT",
   "scripts": {
     "build": "nx build",
@@ -12,7 +12,6 @@
     "access": "public"
   },
   "dependencies": {
-    "debug": "^4.3.6",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
