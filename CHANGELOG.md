@@ -1,3 +1,15 @@
+# [1.10.0](https://github.com/hive-o/middleware/compare/middleware-v1.9.1...middleware-v1.10.0) (2024-08-16)
+
+
+### Bug Fixes
+
+* update yarn.lock ([cfe6a7f](https://github.com/hive-o/middleware/commit/cfe6a7f7c06ce903092469e94eac3ba9b72fd9e7))
+
+
+### Features
+
+* switch context from private to protected ([67263bf](https://github.com/hive-o/middleware/commit/67263bfd392ef0a5e8f7baf3f7714932bccb68b7))
+
 ## [1.9.1](https://github.com/hive-o/middleware/compare/middleware-v1.9.0...middleware-v1.9.1) (2024-08-11)
 
 
