@@ -1732,10 +1732,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hive-o/artax-common@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@hive-o/artax-common@npm:1.1.0"
+  dependencies:
+    tslib: "npm:^2.3.0"
+  checksum: 10c0/069def67da5d10942229ba62abcbd45236c75e3402ca39841e2a08da626168f109a6de0266b1414a2c482cc4697c28935cfc24cbc771b7246e4139e6a899ac42
+  languageName: node
+  linkType: hard
+
 "@hive-o/middleware@workspace:.":
   version: 0.0.0-use.local
   resolution: "@hive-o/middleware@workspace:."
   dependencies:
+    "@hive-o/artax-common": "npm:^1.1.0"
     "@nx/eslint": "npm:19.5.6"
     "@nx/eslint-plugin": "npm:19.5.6"
     "@nx/js": "npm:19.5.6"

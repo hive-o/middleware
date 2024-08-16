@@ -1,4 +1,6 @@
-export type Context = object;
+import { ArtaxContext, Navigation } from '@hive-o/artax-common';
+
+export type Context = ArtaxContext;
 export type Next = () => Promise<void> | void;
 export type MiddlewareFn<T extends Context = Context> = (
   context: T,
@@ -14,7 +16,9 @@ export class Middleware<T extends Context = Context> {
   }
 
   async run(contextOrNext?: Next | T, optionalNext?: Next) {
-    this.context = {} as T;
+    this.context = {
+      navigation: Navigation.instance(),
+    } as T;
     let next: Next | undefined = undefined;
 
     // Determine which argument is context and which is next
