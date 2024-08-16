@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/hive-o/middleware/compare/middleware-v1.10.0...middleware-v1.10.1) (2024-08-16)
+
+
+### Bug Fixes
+
+* set context to protected ([affd3fb](https://github.com/hive-o/middleware/commit/affd3fb8b9ae8304dfa7b0fc0a754af8e3edb136))
+
 # [1.10.0](https://github.com/hive-o/middleware/compare/middleware-v1.9.1...middleware-v1.10.0) (2024-08-16)
 
 
