@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/hive-o/middleware/compare/middleware-v1.10.1...middleware-v1.10.2) (2024-08-16)
+
+
+### Bug Fixes
+
+* initialize context navigation instance ([f41c759](https://github.com/hive-o/middleware/commit/f41c759877b04e4fd05561a30faa98863c5b8c8f))
+
 ## [1.10.1](https://github.com/hive-o/middleware/compare/middleware-v1.10.0...middleware-v1.10.1) (2024-08-16)
 
 
