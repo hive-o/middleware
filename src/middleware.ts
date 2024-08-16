@@ -6,8 +6,8 @@ export type MiddlewareFn<T extends Context = Context> = (
 ) => Promise<void>;
 
 export class Middleware<T extends Context = Context> {
-  private context: T; // Class property to hold the context
   private readonly middlewares: MiddlewareFn<T>[] = [];
+  protected context: T; // Class property to hold the context
 
   async asMiddleware(context: T, next: Next) {
     return this.run(context, next);
