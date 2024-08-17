@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/hive-o/middleware/compare/middleware-v1.10.2...middleware-v1.10.3) (2024-08-17)
+
+
+### Bug Fixes
+
+* update asMiddleware fn ([8723ee8](https://github.com/hive-o/middleware/commit/8723ee826590b4ee0a568d44bac772bed8c692c5))
+
 ## [1.10.2](https://github.com/hive-o/middleware/compare/middleware-v1.10.1...middleware-v1.10.2) (2024-08-16)
 
 
