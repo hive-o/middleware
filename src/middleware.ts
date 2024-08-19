@@ -1,17 +1,14 @@
-import { ArtaxContext, Navigation } from '@hive-o/artax-common';
+import { Navigation } from '@hive-o/artax-common';
 
-export type Context = ArtaxContext;
+export type Context = object;
 export type Next = () => Promise<void> | void;
-export type MiddlewareFn<T extends Context = Context> = (
-  context: T,
-  cb: Next
-) => Promise<void>;
+export type MiddlewareFn<T> = (context: T, cb: Next) => Promise<void>;
 
-export class Middleware<T extends Context = Context> {
+export class Middleware<T extends Context> {
   private readonly middlewares: MiddlewareFn<T>[] = [];
   protected context: T; // Class property to hold the context
 
-  asMiddleware() {
+  asMiddleware<K extends T>(): MiddlewareFn<K> {
     return async (context: T, next: Next) => {
       await this.run(context, next);
     };
@@ -25,7 +22,7 @@ export class Middleware<T extends Context = Context> {
 
     // Determine which argument is context and which is next
     if (typeof contextOrNext === 'function') {
-      next = contextOrNext;
+      next = contextOrNext as Next;
     } else if (contextOrNext) {
       this.context = { ...this.context, ...contextOrNext };
       next = optionalNext;
