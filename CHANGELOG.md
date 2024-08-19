@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/hive-o/middleware/compare/middleware-v1.10.3...middleware-v1.11.0) (2024-08-19)
+
+
+### Features
+
+* add type casting for asMiddleware ([8ad1c5b](https://github.com/hive-o/middleware/commit/8ad1c5b8209d9205934b63e29709186c58668e14))
+
 ## [1.10.3](https://github.com/hive-o/middleware/compare/middleware-v1.10.2...middleware-v1.10.3) (2024-08-17)
 
 
