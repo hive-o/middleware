@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/hive-o/middleware/compare/middleware-v1.11.0...middleware-v1.11.1) (2024-08-20)
+
+
+### Bug Fixes
+
+* remove type casting for context ([5f2a29c](https://github.com/hive-o/middleware/commit/5f2a29cefc64e96d88dafa6c5adc55eb5b5d03f8))
+
 # [1.11.0](https://github.com/hive-o/middleware/compare/middleware-v1.10.3...middleware-v1.11.0) (2024-08-19)
 
 
