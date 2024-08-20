@@ -1,6 +1,6 @@
 {
   "name": "@hive-o/middleware",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "license": "MIT",
   "scripts": {
     "build": "nx build",
@@ -12,7 +12,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@hive-o/artax-common": "^1.1.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {

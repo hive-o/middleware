@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/hive-o/middleware/compare/middleware-v1.11.1...middleware-v1.11.2) (2024-08-20)
+
+
+### Bug Fixes
+
+* switch context type to any ([53e49a3](https://github.com/hive-o/middleware/commit/53e49a38262abe9196733e4bcd3d0c6f17420ee9))
+
 ## [1.11.1](https://github.com/hive-o/middleware/compare/middleware-v1.11.0...middleware-v1.11.1) (2024-08-20)
 
 
