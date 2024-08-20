@@ -1,12 +1,11 @@
-import { Navigation } from '@hive-o/artax-common';
-
-export type Context = object;
+export type Context = any; // TODO add extendable typecasting
 export type Next = () => Promise<void> | void;
 export type MiddlewareFn = (context, cb: Next) => Promise<void>;
 
 export class Middleware {
   private readonly middlewares: MiddlewareFn[] = [];
-  protected context: Context; // Class property to hold the context
+
+  protected context: Context;
 
   asMiddleware(): MiddlewareFn {
     return async (context: Context, next: Next) => {
@@ -15,9 +14,7 @@ export class Middleware {
   }
 
   async run(contextOrNext?: Context | Next, optionalNext?: Next) {
-    this.context = {
-      navigation: Navigation.instance(),
-    } as Context;
+    this.context = {} as Context;
     let next: Next | undefined = undefined;
 
     // Determine which argument is context and which is next
