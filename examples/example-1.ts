@@ -1,16 +1,8 @@
 import { Middleware } from '../dist/middleware';
 
-interface A {
-  s: string;
-}
-
-interface B {
-  d: string;
-}
-
 async function bootstrap() {
-  const a = new Middleware<A>();
-  const b = new Middleware<B>();
+  const a = new Middleware();
+  const b = new Middleware();
 
   b.use(async (ctx, next) => {
     console.log('b');
@@ -24,7 +16,7 @@ async function bootstrap() {
     console.log('a end');
   });
 
-  a.use(b.asMiddleware<A & B>());
+  a.use(b.asMiddleware());
   await a.run();
 }
 

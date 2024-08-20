@@ -2,22 +2,22 @@ import { Navigation } from '@hive-o/artax-common';
 
 export type Context = object;
 export type Next = () => Promise<void> | void;
-export type MiddlewareFn<T> = (context: T, cb: Next) => Promise<void>;
+export type MiddlewareFn = (context, cb: Next) => Promise<void>;
 
-export class Middleware<T extends Context> {
-  private readonly middlewares: MiddlewareFn<T>[] = [];
-  protected context: T; // Class property to hold the context
+export class Middleware {
+  private readonly middlewares: MiddlewareFn[] = [];
+  protected context: Context; // Class property to hold the context
 
-  asMiddleware<K extends T>(): MiddlewareFn<K> {
-    return async (context: T, next: Next) => {
+  asMiddleware(): MiddlewareFn {
+    return async (context: Context, next: Next) => {
       await this.run(context, next);
     };
   }
 
-  async run(contextOrNext?: Next | T, optionalNext?: Next) {
+  async run(contextOrNext?: Context | Next, optionalNext?: Next) {
     this.context = {
       navigation: Navigation.instance(),
-    } as T;
+    } as Context;
     let next: Next | undefined = undefined;
 
     // Determine which argument is context and which is next
@@ -47,7 +47,7 @@ export class Middleware<T extends Context> {
     return this;
   }
 
-  use(middleware: MiddlewareFn<T>) {
+  use(middleware: MiddlewareFn) {
     this.middlewares.push(middleware);
     return this;
   }
